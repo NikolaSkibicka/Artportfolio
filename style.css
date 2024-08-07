@@ -1,0 +1,166 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    padding: 20px 0;
+    border-bottom: 3px solid #f4f4f4;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #f4f4f4;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #f4f4f4;
+    color: #1a1a1a;
+}
+
+/* Welcome Section Styles */
+#welcome {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#welcome h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+#welcome p {
+    font-size: 1.2em;
+}
+
+/* Tattoo Designs Section Styles */
+#tattoo-designs {
+    background-color: #fff;
+    color: #333;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#tattoo-designs h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.designs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.design {
+    width: calc(33.333% - 20px);
+    margin-bottom: 30px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.design:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tattoo-image {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* About Section Styles */
+#about {
+    background-color: #e0e0e0;
+    padding: 60px 0;
+}
+
+#about .container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 3px solid #f4f4f4;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .design {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .design {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    #welcome {
+        padding: 60px 20px;
+    }
+
+    #welcome h2 {
+        font-size: 1.5em;
